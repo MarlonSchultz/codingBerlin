@@ -14,6 +14,7 @@ class Database
 
     public function __construct()
     {
+        // todo: change from sqlite to mysql; credentials for container are in docker-compose.yml
         $this->dbConnection = new \PDO('sqlite:../sqlite.db');
     }
 
