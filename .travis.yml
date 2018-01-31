@@ -1,0 +1,9 @@
+before_install:
+  - docker-compose build
+  - docker-compose up --no-start
+  - docker-compose start
+script:
+  - docker exec -ti php_container composer install -o
+  - docker exec -ti php_container php vendor/phpunit/phpunit/phpunit --configuration phpunit.xml.dist
+after_script:
+  - docker-compose down
