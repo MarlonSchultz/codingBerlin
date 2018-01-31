@@ -8,7 +8,7 @@
 
 namespace tests\PhpUnit\basket;
 
-use mschultz\basket\Basket;
+use mschultz\awesomeShop\basket\Basket;
 use PHPUnit\Framework\TestCase;
 
 

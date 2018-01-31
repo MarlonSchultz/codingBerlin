@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: mgbs
+ * Date: 31.01.18
+ * Time: 13:22
+ */
+
+namespace mschultz\awesomeShop\database;
+
+class Database
+{
+    private $dbConnection;
+
+    public function __construct()
+    {
+        $this->dbConnection = new \PDO('sqlite:../sqlite.db');
+    }
+
+    public function writeToDb(String $sql): int
+    {
+        $pdoStatement = $this->dbConnection->prepare($sql);
+        return $this->dbConnection->exec($pdoStatement);
+    }
+}

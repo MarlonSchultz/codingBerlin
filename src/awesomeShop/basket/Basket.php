@@ -6,7 +6,7 @@
  * Time: 19:00
  */
 
-namespace mschultz\basket;
+namespace mschultz\awesomeShop\basket;
 
 class Basket
 {

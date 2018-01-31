@@ -8,8 +8,8 @@
          verbose="true"
         >
     <testsuites>
-        <testsuite name="somePhp unitTest">
-            <directory>./tests//</directory>
+        <testsuite name="awesomeShop unitTest">
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
