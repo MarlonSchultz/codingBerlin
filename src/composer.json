@@ -1,0 +1,19 @@
+{
+  "name": "root/html",
+  "require-dev": {
+    "phpspec/phpspec": "^4.3",
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "mschultz\\": ""
+    }
+  },
+  "require": {
+    "roave/security-advisories": "dev-master"
+  },
+  "config":{
+    "vendor-dir" : "vendor"
+  }
+
+}
